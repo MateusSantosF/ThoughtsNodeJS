@@ -1,0 +1,29 @@
+<div class="h-100">
+    <div class="d-flex mt-5 w-100 justify-content-center">
+    <h2>Meus pensamentos</h2>
+</div>
+
+<div class="d-flex justify-content-start  w-100">
+    <a href="/thoughts/create" class="btn btn-warning mx-4">Criar pensamento</a>
+</div>
+
+<div class="d-flex w-100 mt-4 h-50 justify-content-center">
+    <ul class="list-group list-group-flush w-75 h-200 overflow-y-scroll" style="height: 50vh;">
+        {{#each thoughts}}
+            {{#with this}}
+            <div class="d-flex justify-content-between align-items-center p-2 border-bottom  border-warning border-2">
+                <li style="list-style: none;">{{title}}</li> 
+                <div class="actions">
+                    <form action="/thoughts/remove" method="post">
+                      <input type="hidden" name="thoughtId" value="{{id}}" class="btn btn-danger">
+                      <input type="submit" class="btn btn-danger" value="Excluir">
+                    </form>
+                </div>
+            </div>   
+            {{/with}} 
+        {{/each}}
+    </ul>
+
+  
+</div>
+</div>

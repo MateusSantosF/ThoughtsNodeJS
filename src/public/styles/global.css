@@ -1,0 +1,19 @@
+html, body {
+    height: 100%; /* Garante que o corpo e o HTML tenham 100% da altura da janela */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Ocupa todo o espaço disponível no corpo */
+  }
+
+  
+footer {
+    flex-shrink: 0; /* Evita que o rodapé seja reduzido */
+}  

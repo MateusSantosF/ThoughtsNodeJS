@@ -1,0 +1,21 @@
+<div class="d-flex justify-content-center mt-4 w-100 h-100">
+
+    {{#if hasNoThoughts}}
+    <h2>Ainda não há pensamentos cadastrados! 😥 Seja você o primeiro</h2>
+    {{else}}
+    <div class="d-flex flex-column justify-content-center "  style="height: max-content;">
+        {{#each thoughts}}
+        <div class="d-flex flex-column  flex-shrink-1  m-2 bg-body-emphasis  bg-dark ">
+            <blockquote class="p-3 border-bottom border-2 fs-3 fst-italic text-light" style="list-style: none;">
+                "{{this.title}}"
+            </blockquote>
+            <div class="mx-3 mb-3">
+                <figcaption>
+                    <span class="fw-bold text-white">Autor:</span> <span class="text-warning">{{this.User.name}}</span>
+                </figcaption>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+    {{/if}}
+</div>
