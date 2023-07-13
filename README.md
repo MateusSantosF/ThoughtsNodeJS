@@ -31,7 +31,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 💻 Projeto
   
-  ThoughtsNodeJS é um projeto de aprendizage que permite seus usuários cadastrarem pensamentos simulando uma rede social. O objetivo do projeto é consolidar os conhecimentos da utilização do express em conjunto com o banco de dados MySql e o ORM Sequelize, assim como, a template engine Handlebars. Foi utilzado também neste projeto, a arquitetura MVC, assim como, os conceitos de cookie e autenticação de usuários, para restringir acesso a diferentes áreas da aplicação.
+  ThoughtsNodeJS é um projeto de aprendizage que permite seus usuários cadastrarem pensamentos simulando uma rede social. O objetivo do projeto é consolidar os conhecimentos da utilização do express em conjunto com o banco de dados MySql e o ORM Sequelize, assim como, a template engine Handlebars. Foi também utilzado neste projeto a arquitetura MVC, assim como, os conceitos de cookie e autenticação de usuários para restringir acesso a diferentes áreas da aplicação.
 
 ## 🛠 Instalação
 
